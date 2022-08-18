@@ -1,0 +1,16 @@
+.container-page {
+  display: flex;
+  padding: 200px 0;
+  justify-content: center;
+}
+.parallax-effect {
+  width: 80%;
+  height: 80%;
+  text-align: center;
+}
+.img-page {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  object-fit: cover;
+}

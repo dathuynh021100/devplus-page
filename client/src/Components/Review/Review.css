@@ -1,0 +1,140 @@
+.review {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 100px 0;
+  justify-content: center;
+  background: white;
+  z-index: 9;
+}
+.review-container {
+  max-width: 1270px;
+  padding: 0px 0 80px;
+}
+.carousel-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Nunito";
+}
+
+.slick-slide > div {
+  margin: 0 15px;
+}
+.card {
+  background: #fff;
+}
+.card :active {
+  cursor: grab;
+}
+.card .rv-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rv-content .author-desc {
+  position: relative;
+  min-height: 440px;
+  padding: 70px 15px;
+  background-color: #f3f8f9;
+  border-radius: 5px 5px 5px 5px;
+}
+.card .rv-content .rv-desc {
+  text-align: center;
+  position: relative;
+  color: #505050;
+  padding: 80px 40px 30px;
+  font-size: 23px;
+  line-height: 33px;
+  font-weight: 500;
+  font-style: italic;
+}
+.rv-content .rv-desc .quote {
+  width: 66px;
+  top: -13px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.rv-content .desc-img {
+  position: absolute;
+  left: 50%;
+  bottom: -75px;
+  transform: translateX(-50%) translateY(-50%);
+}
+.card .rv-content .rv-details {
+  padding-top: 45px;
+}
+.card .rv-content .rv-name {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #226fb7;
+  display: block;
+}
+.card .rv-content .rv-job {
+  font-size: 16px;
+  color: #111111;
+}
+
+/* slick dots */
+
+/* Custom Slick Dots */
+.ft-slick__dots--custom {
+  margin-top: 50px;
+  height: 10px;
+  width: 20px;
+  background-color: #226fb7;
+  opacity: 0.5;
+  border-radius: 4px;
+  position: relative;
+}
+.ft-slick__dots--custom:hover {
+  opacity: 1;
+}
+.slick-dots .slick-active .ft-slick__dots--custom {
+  opacity: 1;
+}
+
+/* reponsive */
+@media (max-width: 1400px) {
+  .review-container {
+    max-width: 1170px;
+  }
+}
+@media (max-width: 1200px) {
+  .review-container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 990px) {
+  .review-container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 765px) {
+  .review-container {
+    width: 540px;
+  }
+}
+
+@media (max-width: 600px) {
+  .review-container {
+    width: 480px;
+  }
+}
+@media (max-width: 415px) {
+  .review-container {
+    width: 415px;
+  }
+}
+@media (max-width: 376px) {
+  .review-container {
+    width: 375px;
+  }
+}

@@ -1,0 +1,74 @@
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  color: #111111;
+  line-height: 1.2;
+}
+.content-campus {
+  padding-bottom: 70px;
+  padding-top: 94px;
+  width: 100%;
+  background: url(../../Assets/Imgs/home-8-bg.jpg) center / cover no-repeat;
+}
+.campus-container {
+  max-width: 1270px;
+  width: 100%;
+  padding: 0 15px;
+  margin: auto;
+}
+.campus-heading {
+  align-items: center;
+  margin-bottom: 50px;
+}
+.campus-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.campus-cover {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+  width: 33.3333%;
+}
+.campus-size {
+  padding: 30px;
+  border: 1px solid #dfe9eb;
+  border-radius: 5px;
+}
+.campus-img {
+  margin-bottom: 30px;
+}
+.campus-img img {
+  width: 100%;
+  border-radius: 5px;
+}
+.campus-title {
+  margin-bottom: 26px;
+}
+.campus-title h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Nunito", sans-serif;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .campus-cover {
+    width: 50%;
+  }
+  .campus-container {
+    max-width: 720px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 739px) {
+  .campus-cover {
+    width: 100%;
+  }
+  h2 {
+    font-size: 25px;
+  }
+}

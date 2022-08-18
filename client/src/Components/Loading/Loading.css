@@ -1,0 +1,46 @@
+.container-loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 1px solid #f3f3f3;
+  /* Light grey */
+  border-top: 5px solid rgb(0, 102, 255);
+  position: relative;
+  /* Dark Green */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spinloader 1s linear infinite;
+}
+
+.loader img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  animation: spinlogo 1s linear infinite;
+}
+
+@keyframes spinloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinlogo {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.footer {
+  background-color: #273c66;
+  background-image: url("../../Assets/Imgs/footer-bg.png");
+  background-size: cover;
+  /* position: relative;   */
+}
+.footer-top {
+  padding: 218px 0 93px;
+}
+.footer-container {
+  max-width: 1270px;
+  margin: auto;
+  width: 100%;
+  padding: 0 15px;
+}
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.footer-cover {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-cover h4 {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+.footer-text,
+.footer-text--right {
+  list-style: outside none none;
+}
+.footer-text li a,
+.footer-text--right li,
+.footer-text li {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  /* text-decoration: none; */
+  margin-bottom: 11px;
+}
+.facebook-footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-link {
+  padding-left: 15px;
+  margin-bottom: 11px;
+  text-decoration: none;
+  color: #fff;
+}
+.footer-link:hover,
+.footer-text--right a:hover {
+  color: #226fb7;
+}
+
+.footer-bottom {
+  padding: 40px 0;
+  position: relative;
+}
+.footer-bottom--container {
+  max-width: 1250px;
+  width: 100%;
+  margin: auto;
+}
+.footer-bottom--row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  align-items: center;
+}
+.footer-bottom-cover {
+  padding: 0 15px;
+  width: 33.33333%;
+}
+.footer-logo {
+  align-items: center;
+  padding: 0 15px;
+}
+.footer-logo img {
+  max-width: 190px;
+  vertical-align: middle;
+}
+.footer-one {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-text li {
+  position: relative;
+}
+
+.text-top--footer {
+  padding-left: 15px;
+}
+.footer-text li::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #226fb7;
+  transform: translateY(-50%);
+}
+.text-bottom--footer {
+  padding-left: 35px;
+  position: relative;
+  margin-bottom: 16px;
+}
+.footer-text--right a {
+  text-decoration: none;
+  color: #fff;
+}
+/* .footer-bottom{
+      position: relative;
+  } */
+.fa-map-marker {
+  position: absolute;
+  color: #fff;
+  content: "\f12d";
+  margin-top: 5px;
+  font-size: 20px;
+}
+.fa-phone {
+  position: absolute;
+  color: #fff;
+  font-size: 15px;
+  margin-top: 2px;
+}
+.fa-envelope-o {
+  position: absolute;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 2px;
+}
+.footer-bottom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  width: 100%;
+  max-width: 1240px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer-fb {
+  list-style: outside none none;
+  text-align: right;
+}
+.fa-facebook::before {
+  content: "\f09a";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 100%;
+  background: #226fb7;
+  color: #ffffff;
+  text-align: center;
+}
+.facebook-footer {
+  display: inline;
+  margin-right: 5px;
+  color: #505050;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .footer-cover {
+    width: 100%;
+  }
+  .footer-container {
+    max-width: 720px;
+    margin: auto;
+  }
+  .footer-top {
+    padding: 190px 0 60px;
+  }
+  .footer-cover {
+    margin-bottom: 50px;
+  }
+  .footer-bottom--row {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-fb {
+    list-style: outside none none;
+    text-align: left;
+    padding-left: 40px;
+  }
+  .footer-logo {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .footer-bottom-cover {
+    width: 100%;
+  }
+}
+@media (max-width: 739px) {
+  .footer-cover {
+    width: 100%;
+  }
+  .footer-top {
+    padding: 64px 0;
+  }
+  .footer-cover {
+    margin-bottom: 50px;
+  }
+  .footer-container {
+    max-width: 540px;
+    margin: auto;
+  }
+  .footer-bottom--row {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-fb {
+    list-style: outside none none;
+    text-align: left;
+    padding-left: 40px;
+  }
+  .footer-logo {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .footer-bottom-cover {
+    width: 100%;
+  }
+  .cover-top {
+    margin-bottom: 0 !important;
+  }
+}

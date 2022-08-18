@@ -1,0 +1,12 @@
+@import "https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* sans-serif is back up font in case Roboto has prolems */
+  font-family: "Rubik", sans-serif;
+  /* padding-bottom: 1000px; */
+  /* margin-bottom: 10000px; */
+}

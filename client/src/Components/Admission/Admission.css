@@ -1,0 +1,65 @@
+@import "https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900";
+.admisstion {
+  text-align: center;
+}
+.admission-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /* row-gap: 20px; */
+  background: #f3f8f9;
+}
+p#text-admission {
+  text-align: left;
+  margin-bottom: -60px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.content-admission {
+  width: 100%;
+}
+.content-admission p#title-admission {
+  padding-top: 90px;
+  padding-left: 100px;
+  font-weight: 700;
+  font-family: "Nunito";
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.img-admission img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.button {
+  background-color: #226fb7;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 100px 0;
+  margin-left: 100px;
+  cursor: pointer; /* Change the cursor to pointer from default each time user hovers the button */
+  border-radius: 40px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  font-family: "Rubik";
+}
+button {
+  padding: 20px 58px;
+  border-radius: 30px;
+}
+.button:hover {
+  opacity: 0.8;
+}
+#button-admission span {
+  font-weight: 900;
+  font-size: 12;
+}
+
+@media only screen and (min-width: 1025px) {
+  .img-admission {
+    padding: 0;
+  }
+}
