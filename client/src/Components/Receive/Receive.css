@@ -115,7 +115,9 @@ section{
     .content-list h2{
         font-size: 30px;
     }
-    
+    .content-title{
+     margin: 0;
+    }
 }
 @media(max-width:739px){
     .list-row{
@@ -123,5 +125,9 @@ section{
     }
     .content-list h2{
         font-size: 25px;
+    }
+    .content-title{
+        margin-top: 0;
+        padding: 64px 0 40px;
     }
 }

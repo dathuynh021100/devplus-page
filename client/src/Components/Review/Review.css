@@ -127,6 +127,10 @@
   .review-container {
     width: 480px;
   }
+  .review{
+    padding-top: 0;
+    padding-bottom: 70px;
+  }
 }
 @media (max-width: 415px) {
   .review-container {

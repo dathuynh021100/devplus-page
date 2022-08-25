@@ -63,3 +63,40 @@ button {
     padding: 0;
   }
 }
+@media(min-width: 740px) and (max-width: 1023px){
+  .admission-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* .img-admission{
+    width: 95%;
+  } */
+  .content-admission p#title-admission {
+   /* padding: 30px; */
+   padding-top: 30px;
+
+  }
+  p#text-admission{
+    /* padding:  30px 15px; */
+    line-height: 26px;
+  }
+  
+}
+@media(max-width:739px){
+  .content-admission{
+    width: 95%;
+  }
+  .img-admission{
+    width: 93%;
+  }
+  .content-admission p#title-admission{
+    padding: 20px 25px;
+    margin-bottom: 0;
+  }
+  p#text-admission{
+    padding:10px 25px;
+  }
+  .button{
+    margin: 80px 0 70px 80px;
+  }
+}
