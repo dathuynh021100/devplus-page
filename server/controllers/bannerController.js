@@ -1,27 +1,27 @@
-const Admission = require('../models/admissionModel')
+const Banner = require('../models/bannerModel')
 
-const admissionController = {
+const bannerController = {
     create : async(req, res) =>{
         try{
             const {tag, title,detail,image} = req.body
-            const admission = new Admission({
+            const banner = new Banner({
                 tag,
                 title,
                 detail,
                 image
             })
-            await admission.save()
+            await banner.save()
             res
             .status(200)
-            .json({ msg:"create admission success"})
+            .json({ msg:"create banner success"})
         }catch(err){
             res.status(500).json({msg : err.message})
         }
     },
     info : async(req, res) =>{
         try {
-            const admission = await Admission.findOne({tag : "admission1"})
-            res.status(200).json(admission)
+            const banner = await Banner.findOne({tag : "banner1"})
+            res.status(200).json(banner)
         } catch (err) {
             res.status(500).json({msg : err.message})
         }
@@ -29,7 +29,7 @@ const admissionController = {
     edit : async(req, res) =>{
         try {
             const {title,detail,image} = req.body
-            await Admission.findOneAndUpdate({tag : "admission1"},{title,detail,image})
+            await Banner.findOneAndUpdate({tag : "banner1"},{title,detail,image})
             res.status(200).json({msg: "Update success"})
         } catch (err) {
             res.status(500).json({msg: err.message})
@@ -37,4 +37,4 @@ const admissionController = {
     }
 }
 
-module.exports = admissionController;
+module.exports = bannerController;
