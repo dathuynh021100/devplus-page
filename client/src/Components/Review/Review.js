@@ -2,29 +2,8 @@ import "./Review.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const slide_data = [
-  {
-    author: "Quynh Nga",
-    img: "https://devplus.edu.vn/assets/images/devplus/person2.png",
-    job: "Menber DevPlus ++",
-    title:
-      "I learnt a lot of knowledge from experienced seniors of Dev plus. They help me to understand the procedure in running a real project. Additionally, taking part in activities such as workshops promote my soft skills.",
-  },
-  {
-    author: "Thatsadaphone Inthapakdy",
-    img: "https://devplus.edu.vn/assets/images/devplus/person3.png",
-    job: "Menber DevPlus ++",
-    title:
-      "Dev plus help me to re-train about knowledge with technology, experience how to do the real project with senior developers by testing their current project, and share more experience with them. enjoy more events and workshops.",
-  },
-  {
-    author: "Tien Thinh",
-    img: "https://devplus.edu.vn/assets/images/devplus/person1.png",
-    job: "Menber DevPlus ++",
-    title:
-      "This is an awesome programme which supports me too much in enhancing my skills and knowledge to become a developer. I feel very lucky because of joining Devplus.",
-  },
-];
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 function Review() {
   const settings = {
@@ -50,6 +29,19 @@ function Review() {
       },
     ],
   };
+
+  const [reviewnData, setReviewData] = useState([]);
+  const getData = async () => {
+    await axios
+      .get("http://localhost:8000/api/admin/review/infoAll")
+      .then((res) => {
+        setReviewData(res.data);
+      })
+      .catch((err) => console.log(err));
+  };
+  useEffect(() => {
+    getData();
+  }, []);
   return (
     <section className="review">
       <div className="review-container">
@@ -57,7 +49,7 @@ function Review() {
           <h2>What alumni saying</h2>
         </div>
         <Slider {...settings}>
-          {slide_data.map((item, index) => (
+          {reviewnData.map((item, index) => (
             <div className="card" key={index}>
               <div className="rv-content">
                 <div className="author-desc">
@@ -70,7 +62,7 @@ function Review() {
                     {item.title}
                   </div>
                   <div className="desc-img">
-                    <img src={item.img} alt="" />
+                    <img src={item.image} alt="" />
                   </div>
                 </div>
                 <div className="rv-details">
