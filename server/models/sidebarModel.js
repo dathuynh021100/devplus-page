@@ -8,7 +8,7 @@ const sidebarSchema = new Schema(
       type: String,
       trim: true,
     },
-    images: [String],
+    images: [Object],
     map: String
   },
   { timestamp: true }

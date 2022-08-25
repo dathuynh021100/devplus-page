@@ -22,9 +22,10 @@ const sidebarController = {
     info : async(req, res) =>{
         try {
             const sidebar = await Sidebar.findOne({tag : "sidebar1"})
+            // console.log(sidebar)
             res.status(200).json(sidebar)
         } catch (err) {
-            res.status(500).json({msg : err.message})
+            res.status(500).json({msg : err.messasge})
         }
     },
     edit : async(req, res) =>{
