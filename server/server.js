@@ -1,4 +1,7 @@
 const sidebarRoutes = require("./routes/sidebarRoute")
+const aboutRoutes = require("./routes/aboutRoutes")
+const admissionRoutes = require('./routes/admissionRoutes')
+const reviewRoutes = require("./routes/reviewRoutes")
 const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
@@ -23,4 +26,7 @@ app.use(express.json())
 express.urlencoded({extended : true})
 // routes
 app.use(sidebarRoutes)
+app.use(aboutRoutes)
+app.use(admissionRoutes)
+app.use(reviewRoutes)
 
