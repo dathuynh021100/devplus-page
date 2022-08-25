@@ -2,6 +2,8 @@ const sidebarRoutes = require("./routes/sidebarRoute")
 const aboutRoutes = require("./routes/aboutRoutes")
 const admissionRoutes = require('./routes/admissionRoutes')
 const reviewRoutes = require("./routes/reviewRoutes")
+const bannerRoutes  = require("./routes/bannerRoutes")
+const commonRoutes = require("./routes/commonRoutes")
 const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
@@ -29,4 +31,6 @@ app.use(sidebarRoutes)
 app.use(aboutRoutes)
 app.use(admissionRoutes)
 app.use(reviewRoutes)
+app.use(bannerRoutes)
+app.use(commonRoutes)
 

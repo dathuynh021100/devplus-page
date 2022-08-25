@@ -1,4 +1,6 @@
-const Admission = require("../models/admissionModel");
+
+const Admission = require('../models/admissionModel')
+
 
 const admissionController = {
   create: async (req, res) => {
