@@ -58,5 +58,32 @@
   }
   .banner-body h1 {
     font-size: 55px;
+
+  }
+}
+@media(min-width: 740px) and (max-width: 1023px){
+  .banner-body{
+   margin-left: 60px;
+   margin-right: 60px;
+   top: 17%;
+  }
+   .banner-body h1 {
+    font-size: 44px;
+  }
+}
+@media(max-width:739px){
+  .banner-body{
+    padding: 0px 30px;
+  }
+  .banner-body h1 {
+    font-size: 25px;
+  }
+  .banner-body p {
+    font-size: 18px;
+  }
+  .banner-btn{
+    font-size: 15px;
+    padding: 15px 30px;
+
   }
 }

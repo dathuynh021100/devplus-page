@@ -10,7 +10,7 @@ const data = [
       "Yes, it’s mandatory. Fulltime as well as full commitment in order to obtain the best achievement.",
   },
   {
-    title: "Does Devplus offer free courses?",
+    title: "Which course will be suitable with me?",
     answer:
       "Yes, it’s kind of a scholarship. But, you need to pass our challenge through test and interview round.",
   },
