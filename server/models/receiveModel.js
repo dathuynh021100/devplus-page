@@ -2,7 +2,7 @@ const { Schema, model } = require("mongoose");
 
 const receiveSchema = new Schema(
   {
-    img: String,
+    image: String,
     title: {
       type: String,
       trim: true,
@@ -17,4 +17,4 @@ const receiveSchema = new Schema(
 
 const Receive = model("Receive", receiveSchema);
 
-module.exports = Review;
+module.exports = Receive;
