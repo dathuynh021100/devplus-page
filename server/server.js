@@ -4,6 +4,7 @@ const admissionRoutes = require('./routes/admissionRoutes')
 const reviewRoutes = require("./routes/reviewRoutes")
 const bannerRoutes  = require("./routes/bannerRoutes")
 const commonRoutes = require("./routes/commonRoutes")
+const campusRoutes = require("./routes/campusRoutes")
 const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
@@ -33,4 +34,5 @@ app.use(admissionRoutes)
 app.use(reviewRoutes)
 app.use(bannerRoutes)
 app.use(commonRoutes)
+app.use(campusRoutes)
 
